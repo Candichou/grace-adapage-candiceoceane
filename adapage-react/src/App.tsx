@@ -1,11 +1,11 @@
-import "./App.css";
+import "./index.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useState } from "react";
 
-import Portrait from "./pages/Portrait";
-import Citation from "./pages/Citation";
-import Specificite from "./pages/Specificite";
-import Frise from "./pages/Frise";
+import Profil from "./pages/Profil";
+import Quotes from "./pages/Quotes";
+import InfoCard from "./pages/InfoCard";
+import Timeline from "./pages/Timeline";
 
 function App() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -14,6 +14,7 @@ function App() {
     <>
       <Router>
         {/* Navigation */}
+
         <div>
           <nav>
             <div className="max-w-7xl mx-auto">
@@ -28,9 +29,9 @@ function App() {
                   </Link>
                 </div>
                 <div className="hidden lg:flex gap-8 ">
-                  <Link to="/specificite">Specificités</Link>
-                  <Link to="/citation">Citation</Link>
-                  <Link to="/frise">Frise</Link>
+                  <Link to="/infocard">Infos</Link>
+                  <Link to="/quotes">Quotes</Link>
+                  <Link to="/timeline">Timeline</Link>
                 </div>
 
                 {/* Mobile menu button */}
@@ -51,9 +52,9 @@ function App() {
             >
               <div className="px-8 pt-8">
                 <div className="flex flex-col gap-8 font-bold tracking-wider">
-                  <Link to="/specificite">Specificités</Link>
-                  <Link to="/citation">Citation</Link>
-                  <Link to="/frise">Frise</Link>
+                  <Link to="/infocard">Infos</Link>
+                  <Link to="/quotes">Quotes</Link>
+                  <Link to="/timeline">Timeline</Link>
                 </div>
               </div>
             </div>
@@ -62,10 +63,10 @@ function App() {
 
         {/* Routes */}
         <Routes>
-          <Route path="/" element={<Portrait />} />
-          <Route path="/specificite" element={<Specificite />} />
-          <Route path="/citation" element={<Citation />} />
-          <Route path="/frise" element={<Frise />} />
+          <Route path="/" element={<Profil />} />
+          <Route path="/infocard" element={<InfoCard />} />
+          <Route path="/quotes" element={<Quotes />} />
+          <Route path="/timeline" element={<Timeline />} />
         </Routes>
       </Router>
     </>
