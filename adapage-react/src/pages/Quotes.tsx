@@ -1,12 +1,12 @@
 import { profil } from "../data/profil";
-function Quotes() {
+import { QuotesComponents } from "../components/QuotesComponents";
+
+export default function Quotes() {
   return (
-    <section>
-      <div>
-        <p></p>
-      </div>
-    </section>
+    <div>
+      {profil.quotes.map((quote, index: number) => (
+        <QuotesComponents key={index} quotes={quote} />
+      ))}
+    </div>
   );
 }
-
-export default Quotes;

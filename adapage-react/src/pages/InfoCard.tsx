@@ -1,5 +1,17 @@
+import { InfoCardComponents } from "../components/InfoCardComponents";
+import { profil } from "../data/profil";
+import type { InfoCard } from "../Types/data";
+
 function InfoCard() {
-  return <h1>JE SUIS LA SECTION SPECIFICITE</h1>;
+  return (
+    <section>
+      <div>
+        {profil.infoCard.map((info: InfoCard, index: number) => (
+          <InfoCardComponents key={index} infocard={info} />
+        ))}
+      </div>
+    </section>
+  );
 }
 
 export default InfoCard;
