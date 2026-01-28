@@ -1,10 +1,10 @@
-import imagePortrait from "../assets/img3.jpg";
+import { profil } from "../data/profil";
 
 function Portrait() {
   return (
     <div>
       <h1>Elips</h1>
-      <img src={imagePortrait} alt="portrait elips" />
+      <img src={profil.image} alt="portrait elips" />
     </div>
   );
 }
