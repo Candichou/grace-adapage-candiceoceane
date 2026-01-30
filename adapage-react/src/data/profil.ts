@@ -11,6 +11,7 @@ import image10 from "../assets/img10.jpg";
 import image11 from "../assets/img11.jpg";
 import image12 from "../assets/img12.jpg";
 import image13 from "../assets/img13.jpg";
+import image14 from "../assets/img14.webp";
 import type { Profil } from "../Types/data";
 
 export const profil: Profil = {
@@ -32,6 +33,7 @@ export const profil: Profil = {
     image11,
     image12,
     image13,
+    image14,
   ],
 
   infoCard: [
