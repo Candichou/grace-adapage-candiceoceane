@@ -32,7 +32,7 @@ export function Carousel({ images, name, interval = 3000 }: CarouselProps) {
         <img
           src={images[currentIndex]}
           alt={`${name} - ${currentIndex + 1}`}
-          className="w-full h-96 object-cover transition-all duration-500"
+          className="w-full h-full object-contain transition-all duration-500"
         />
       </div>
 

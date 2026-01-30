@@ -19,6 +19,11 @@ function App() {
           <Route path="/timeline" element={<Timeline />} />
         </Routes>
       </main>
+      <footer className="bg-elips-orange py-6 text-center sticky bottom-0 z-50">
+        <p className="text-elips-cream font-medium">
+          Made with love 🧡 by Candice & Océane
+        </p>
+      </footer>
     </Router>
   );
 }

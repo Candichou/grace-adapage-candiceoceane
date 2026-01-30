@@ -40,6 +40,7 @@ export const profil: Profil = {
     { title: "Titre", value: "Miss Sympathie" },
     { title: "Signe Astrologique", value: "Taureau" },
     { title: "Date de naissance", value: "16 mai 1997" },
+    { title: "Genre", value: "Non-binaire" },
   ],
   timeline: [
     { year: 1997, description: "Naissance d'Ély Méchain" },

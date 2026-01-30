@@ -5,9 +5,10 @@ export function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const navLinks = [
+    { to: "/", label: "Profil" },
     { to: "/infocard", label: "Infos" },
-    { to: "/quotes", label: "Quotes" },
-    { to: "/timeline", label: "Timeline" },
+    { to: "/quotes", label: "Citations" },
+    { to: "/timeline", label: "Chronologie" },
   ];
 
   return (
